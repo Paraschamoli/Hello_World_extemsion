@@ -1,5 +1,5 @@
 document.getElementById("getTitle").addEventListener("click", function () {
-  console.log("Button clicked!"); // Debugging line
+  console.log("Button clicked!"); 
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     if (tabs.length > 0) {
       const currentTab = tabs[0];
